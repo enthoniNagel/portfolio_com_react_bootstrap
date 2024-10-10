@@ -45,14 +45,13 @@ Criar uma página que apresente informações sobre você, seus projetos e forma
    - Utilize classes do Bootstrap para garantir que a página seja responsiva.
    - Adicione algum estilo customizado, se desejar, para personalizar a aparência.
 
-5. **Testes:**
+5.**Testes:**
    - Verifique a navegação entre as seções e o layout em diferentes tamanhos de tela.
    - **Problemas Identificados:**
-     - O botão "Quer saber um segredo?" quase não é clicável devido ao movimento constante.
-     - O som associado ao botão "Precione para saber mais 'Sobre mim'" não está funcionando corretamente.
+     - O botão "Quer saber um segredo?" quase não é clicável devido ao movimento constante e sai um som para dar uma descontraída.
+     - O som associado ao botão "Precione para saber mais 'Sobre mim'" está funcionando.
 
 ### Extensões (opcional):
-- Adicionar animações nas transições entre seções.
 - Incluir um modal que exibe detalhes de cada projeto ao clicar no cartão.
 
 ### Entrega:
