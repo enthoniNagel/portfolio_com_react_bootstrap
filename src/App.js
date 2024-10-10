@@ -1,23 +1,33 @@
-import logo from './logo.svg';
+import React, { useState } from 'react';
+import Header from './components/Header';
+import About from './components/About';
+import Projects from './components/Projects';
+import Contact from './components/Contact';
 import './App.css';
 
 function App() {
+  const [highlight, setHighlight] = useState('');
+
+
+  const handleHighlight = (section) => {
+    setHighlight(section);
+    setTimeout(() => {
+      setHighlight(''); 
+    }, 1000); 
+  };
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Header handleHighlight={handleHighlight} />
+      <section id="about">
+        <About highlight={highlight === 'about' ? 'highlight' : ''} />
+      </section>
+      <section id="projects">
+        <Projects highlight={highlight === 'projects' ? 'highlight' : ''} />
+      </section>
+      <section id="contact">
+        <Contact highlight={highlight === 'contact' ? 'highlight' : ''} />
+      </section>
     </div>
   );
 }

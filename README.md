@@ -1,70 +1,59 @@
-# Getting Started with Create React App
+# Atividade Avaliativa 01
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Projeto: Página Pessoal
 
-## Available Scripts
+### Instruções
+Criar uma página que apresente informações sobre você, seus projetos e formas de contato.
 
-In the project directory, you can run:
+### Estrutura da Página
 
-### `npm start`
+#### Cabeçalho (Header):
+- Um título com seu nome.
+- Um menu de navegação com links para "Sobre", "Projetos" e "Contato".
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+#### Seção "Sobre":
+- Uma breve descrição sobre você.
+- Uma foto sua.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+#### Seção "Projetos":
+- Uma grade de cartões (cards) exibindo os projetos mais relevantes em que você trabalhou ou desenvolveu na faculdade.
+- Cada cartão deve conter um título, uma breve descrição e um link para o repositório do projeto no Github.
 
-### `npm test`
+#### Seção "Contato":
+- Um formulário simples com campos para nome, email e mensagem.
+- Um botão para enviar o formulário (sem funcionalidade de envio real, apenas estilizado).
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+#### Rodapé (Footer):
+- Links para suas redes sociais (GitHub e LinkedIn).
 
-### `npm run build`
+### Passos para Implementação
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+1. **Configuração do Projeto:**
+   - Crie um novo projeto React usando `create-react-app`.
+   - Instale o React Bootstrap com `npm install react-bootstrap bootstrap`.
+   - Importe o CSS do Bootstrap no seu arquivo `index.js` ou `App.js`.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+2. **Estrutura da Aplicação:**
+   - Crie componentes para cada seção: Header, About, Projects, Contact, e Footer.
+   - Utilize os componentes do React Bootstrap, como Navbar, Container, Row, Col, Card, e Form.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+3. **Preenchimento de Dados:**
+   - No componente About, adicione seu texto e imagem.
+   - No componente Projects, crie um array de objetos para representar seus projetos e mapeie-os para gerar os cartões.
 
-### `npm run eject`
+4. **Estilo e Responsividade:**
+   - Utilize classes do Bootstrap para garantir que a página seja responsiva.
+   - Adicione algum estilo customizado, se desejar, para personalizar a aparência.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+5. **Testes:**
+   - Verifique a navegação entre as seções e o layout em diferentes tamanhos de tela.
+   - **Problemas Identificados:**
+     - O botão "Quer saber um segredo?" quase não é clicável devido ao movimento constante.
+     - O som associado ao botão "Precione para saber mais 'Sobre mim'" não está funcionando corretamente.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Extensões (opcional):
+- Adicionar animações nas transições entre seções.
+- Incluir um modal que exibe detalhes de cada projeto ao clicar no cartão.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+### Entrega:
+Hospede seu projeto no GitHub Pages e envie o link da sua página até 14/10 às 23h59.
