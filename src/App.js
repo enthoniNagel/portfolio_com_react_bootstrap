@@ -3,7 +3,8 @@ import Header from './components/Header';
 import About from './components/About';
 import Projects from './components/Projects';
 import Contact from './components/Contact';
-import Footer from './components/Footer'; // Importando o Footer
+import Footer from './components/Footer'; // Certifique-se de que isso está aqui
+
 import './App.css';
 
 function App() {
@@ -12,8 +13,8 @@ function App() {
   const handleHighlight = (section) => {
     setHighlight(section);
     setTimeout(() => {
-      setHighlight(''); 
-    }, 1000); 
+      setHighlight('');
+    }, 1000);
   };
 
   return (
@@ -28,7 +29,7 @@ function App() {
       <section id="contact">
         <Contact highlight={highlight === 'contact' ? 'highlight' : ''} />
       </section>
-      <Footer /> {/* Adicionando o Footer aqui */}
+      <Footer /> {/* Certifique-se de que o Footer está aqui */}
     </div>
   );
 }
