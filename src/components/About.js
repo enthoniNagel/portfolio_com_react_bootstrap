@@ -56,7 +56,7 @@ function About() {
     <>
       <div className="d-flex flex-column align-items-center mb-3">
         <Button variant="primary" onClick={handleShow} className="btn-hover mb-2">
-          Pressione para saber mais "Sobre mim"
+          pressione para saber mais "Sobre mim"
         </Button>
         <Button 
           className="secret-button"
