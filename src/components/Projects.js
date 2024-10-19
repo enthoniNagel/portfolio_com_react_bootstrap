@@ -10,7 +10,7 @@ function Projects() {
     {
       title: 'Chuck Norris API',
       description: 'Projeto que consome uma API para gerar piadas aleatórias.',
-      githubLink: 'https://github.com/enthoniNagel/Chuck_Norris',
+      githubLink: 'https://enthoninagel.github.io/Chuck_Norris/',
     },
     {
       title: 'Tic Tac Toe',

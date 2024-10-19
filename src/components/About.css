@@ -56,4 +56,17 @@
   .secret-button.flee {
     pointer-events: none; 
   }
+  .about-section {
+    background-color: #f8f9fa; /* Cor de fundo leve */
+    border-radius: 8px; /* Bordas arredondadas */
+  }
+  
+  .perfil-img {
+    width: 150px; /* Ajuste o tamanho da imagem conforme necessário */
+    border-radius: 50%; /* Torna a imagem redonda */
+  }
+  
+  .secret-button {
+    transition: transform 0.2s; /* Transição suave para o movimento do botão */
+  }
   
